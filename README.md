@@ -3,8 +3,8 @@
 **What this shows:** merchant onboarding risk decisions + weekly monitoring & alerts (Affirm-style)
 
 ## Tableau Public Dashboards
-- **Onboarding Risk Scorecard (Approve / Review / Decline):** [PASTE_LINK_HERE](https://public.tableau.com/app/profile/kimberly.jarosch/viz/MerchantOnboardingRiskScorecardSimulatedData/MerchantOnboardingRiskScorecardApproveReviewDecline)
-- **Monitoring & Alerts (Weekly):** [PASTE_LINK_HERE](https://public.tableau.com/app/profile/kimberly.jarosch/viz/merchant_monitoring_alerts_dashboard/MerchantMonitoringAlerts?publish=yes)
+- **Onboarding Risk Scorecard (Approve / Review / Decline):** [Merchant Onboarding Dashboard](https://public.tableau.com/app/profile/kimberly.jarosch/viz/MerchantOnboardingRiskScorecardSimulatedData/MerchantOnboardingRiskScorecardApproveReviewDecline)
+- **Monitoring & Alerts (Weekly):** [Merchant Monitoring Dashboard](https://public.tableau.com/app/profile/kimberly.jarosch/viz/merchant_monitoring_alerts_dashboard/MerchantMonitoringAlerts?publish=yes)
 
 ## Project Summary
 This portfolio project simulates the merchant risk lifecycle:
