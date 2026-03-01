@@ -1,6 +1,6 @@
 # Merchant Risk Analytics (Simulated BNPL)
 **Tools:** SQL (SQLite), Python (Jupyter), Tableau Public  
-**What this shows:** merchant onboarding risk decisions + weekly monitoring & alerts (Affirm-style)
+**What this shows:** merchant onboarding risk decisions + weekly monitoring & alerts
 
 ## Tableau Public Dashboards
 - **Onboarding Risk Scorecard (Approve / Review / Decline):** [Merchant Onboarding Dashboard](https://public.tableau.com/app/profile/kimberly.jarosch/viz/MerchantOnboardingRiskScorecardSimulatedData/MerchantOnboardingRiskScorecardApproveReviewDecline)
