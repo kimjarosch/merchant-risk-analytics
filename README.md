@@ -27,10 +27,10 @@ This portfolio project simulates the merchant risk lifecycle:
 
 ## Screenshots
 ### Onboarding Risk Scorecard
-![Onboarding Dashboard](dashboard_merchant_onboard_score.png)
+![Onboarding Dashboard](screenshots/dashboard_merchant_onboard_score.png)
 
 ### Monitoring & Alerts
-![Monitoring Dashboard](dashboard_monitor.png)
+![Monitoring Dashboard](screenshots/dashboard_monitor.png)
 
 ## How to Reproduce Locally
 1. Run the notebooks in `notebooks/` to generate simulated CSV outputs  
