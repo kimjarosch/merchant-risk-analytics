@@ -21,8 +21,14 @@ This project simulates the merchant risk lifecycle end-to-end:
 - Assigns **severity (Medium/High)** and **reason codes** to explain why merchants were flagged
 
 ## Severity Logic (Queue Prioritization)
-- **High:** multiple risk signals triggered in the same week *or* a single extreme spike (e.g., sharp dispute/refund spike or steep approval-rate drop vs baseline).  
-- **Medium:** one moderate signal triggered (e.g., dispute/refund spike **or** approval-rate drop vs baseline), monitored for escalation.
+Only merchant-weeks with at least one alert are included in the queue.
+
+- **High:** triggered if **either**  
+  - a **dispute rate spike** is detected (`dispute_rate_spike`), **or**  
+  - a **refund rate spike AND approval-rate drop** happen in the same week (`refund_rate_spike` + `approval_rate_drop`)
+- **Medium:** any other alerted merchant-week (e.g., single refund spike, single approval drop, or GMV surge without the High conditions)
+
+Reason codes shown in the queue: `dispute_rate_spike`, `refund_rate_spike`, `approval_rate_drop`, `gmv_surge`.
 
 ## Key Metrics Monitored
 - **Approval rate** (drop vs baseline)
