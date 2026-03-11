@@ -35,6 +35,21 @@ Reason codes shown in the queue: `dispute_rate_spike`, `refund_rate_spike`, `app
 - **Dispute rate** (spike vs baseline)
 - **Refund rate** (spike vs baseline)
 
+## Sample Findings (Simulated Data)
+Onboarding Scorecard — 500 merchants evaluated
+
+- 76.2% were approved outright, 22.8% flagged for manual review, and 1% declined — a distribution that reflects a realistic BNPL portfolio where most merchants pass but a meaningful queue still requires human decisioning
+- Declined merchants consistently scored high on two signals: low approval rates (below 70%) and elevated dispute rates (above 3%), suggesting these two features carry the most discriminatory weight in the scoring model
+- The portfolio averaged an 84.3% approval rate, a 2.5% refund rate, and a 1.1% dispute rate — metrics that established the baselines used downstream for weekly monitoring
+- Electronics and beauty generated the largest review queues by industry volume, while gaming, travel, and marketplace showed the highest proportion of manual review flags relative to their size
+
+Monitoring & Alerts — 26 weeks of simulated activity across 13,422 merchant-weeks
+
+- 4,064 alert instances were generated across the monitoring window, with approval rate drops being the most common signal (2,530 instances), followed by refund spikes (1,401) and dispute spikes (526)
+- GMV surges were rare (21 instances), suggesting they function better as a secondary signal than a standalone trigger — a potential candidate for alert suppression tuning in a future version
+- In the most recent week, 128 merchants were flagged, with 5 escalated to High severity — a manageable queue size that validates the triage logic for operational use
+- High severity alerts were concentrated in electronics and beauty, pointing to those segments as candidates for tighter onboarding thresholds or more frequent review cycles
+
 ## Key Features
 - Rule-based alerting with baseline comparisons (weekly monitoring)
 - Severity tiers (Medium / High) for triage prioritization
